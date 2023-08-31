@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    background-color: #f00;
+}
+ul {
+    width: 25%;
+    background-color: antiquewhite;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+li {
+   list-style: none; 
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #f00;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+.social-icons svg :hover {
+    fill: #f00;
+}
