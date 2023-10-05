@@ -4,21 +4,63 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}        
+
+
+body, 
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-nav {
-    display: flex;
-    background-color: #f00;
-}
-ul {
-    width: 25%;
-    background-color: antiquewhite;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+        
+.container {
+   display: grid;
+   grid-template-columns: 250px 1fr; /* 1fr for content area */
+            min-height: 100vh; /* Make sure the container covers the entire viewport height */
+        }
+
+        /* Style the navbar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer; /* Add a pointer cursor to menu items */
+        }
+
+        /* Style the content area */
+        main {
+            padding: 20px;
+        }
+
+        .active {
+           display: block;
+          display: flex;
+          justify-content: center;
+          
+        }
+
+        div {
+            display: none;
 }
 li {
    list-style: none; 
