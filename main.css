@@ -5,16 +5,22 @@
     margin: 0;
     padding: 0;
 }        
-
-
 body, 
 html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
-
-        
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+.profile-pic {
+    width: 20em;
+    height: 20em;
+}      
 .container {
    display: grid;
    grid-template-columns: 250px 1fr; /* 1fr for content area */
@@ -50,11 +56,16 @@ html {
         /* Style the content area */
         main {
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .active {
-           display: block;
+          display: block;
           display: flex;
+          flex-direction: column;
+          align-items: center;
           justify-content: center;
           
         }
@@ -79,3 +90,21 @@ a:hover {
 .social-icons svg :hover {
     fill: #f00;
 }
+/* Style the grid container */
+#blackBoxTheatreContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    justify-items: center;
+}
+
+/* Style the images */
+#blackBoxTheatreContent img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+#blackBoxTheatreContent {
+    display: none;
+}
+
