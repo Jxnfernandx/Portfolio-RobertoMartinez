@@ -1,33 +1,58 @@
-function showSection(sectionId) {
+const SECTIONS = ['blackBoxTheatreContent', 'observatoryContent', 'pallativeCareCenterContent', 'renders', 'revolveTerraChapel', 'sketches'];
+
+function showSection(event, sectionId) {
+  event.preventDefault();
   // Hide all sections
   document.querySelectorAll('main > div').forEach(section => {
-      section.classList.remove('active');
+    section.classList.remove('active');
+    section.style.display = 'none'; // Add this line
   });
 
   // Show the selected section
   const selectedSection = document.getElementById(`section${sectionId}`);
   if (selectedSection) {
-      selectedSection.classList.add('active');
+    selectedSection.classList.add('active');
+    selectedSection.style.display = 'block'; // Add this line
+
+    // If it's section 2, show the list and hide the content
+    if (sectionId === 2) {
+      const list = document.querySelector('#section2 ul');
+      if (list) {
+        list.style.display = 'block';
+      }
+
+      SECTIONS.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.style.display = 'none';
+        }
+      });
+    }
   }
 }
 
-// Different functions for each Section 2 link
 function showSection2Content(contentId) {
-  const section2 = document.getElementById("section2");
-  const blackBoxTheatreContent = document.getElementById('blackBoxTheatreContent');// You can customize these functions to display content for each link
-  
-  blackBoxTheatreContent.style.display = "none";
-  section2.style.display = "none";
+  // Hide all content
+  SECTIONS.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.style.display = 'none';
+    }
+  });
 
-  if (contentId === 1) {
-   blackBoxTheatreContent.style.display = 'block';
-   
-  } else if (contentId === 2) {
-      // Logic to display content for Observatory
-      alert('Displaying content for Observatory');
-  } else if (contentId === 3) {
-      // Logic to display content for Palliative Care Center
-      alert('Displaying content for Palliative Care Center');
+  // Hide the list in section 2
+  const list = document.querySelector('#section2 ul');
+  if (list) {
+    list.style.display = 'none';
   }
-  // Add more conditions for other links as needed.
+
+  // Show the selected content
+  const selectedContent = SECTIONS[contentId - 1];
+  if (selectedContent) {
+    const element = document.getElementById(selectedContent);
+    if (element) {
+      element.style.display = 'block';
+    }
+  }
 }
+
