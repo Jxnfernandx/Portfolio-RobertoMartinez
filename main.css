@@ -51,6 +51,7 @@ svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .sidebar a {
     padding: 8px 8px 8px 32px;
@@ -58,7 +59,9 @@ svg {
     font-size: 25px;
     color: var(--white);
     display: block;
+    text-align: center;
 }
+
 main {
     padding: 20px;
     display: flex;
@@ -92,8 +95,7 @@ color: #f00;
 }
 .social-icons {
     display: flex;
-    justify-content: space-evenly;
-    gap: 1em;
+    justify-content: center;
 }
 .social-icons svg :hover {
     fill: #f00;
