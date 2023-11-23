@@ -1,58 +1,30 @@
-const SECTIONS = ['blackBoxTheatreContent', 'observatoryContent', 'pallativeCareCenterContent', 'renders', 'revolveTerraChapel', 'sketches'];
+const closed = document.querySelector(".hamburgerClose");
+const open = document.querySelector(".hamburgerOpen");
 
-function showSection(event, sectionId) {
-  event.preventDefault();
-  // Hide all sections
-  document.querySelectorAll('main > div').forEach(section => {
-    section.classList.remove('active');
-    section.style.display = 'none'; // Add this line
-  });
+closed.addEventListener("click", () => {
+  closed.style.display = "none";
+  open.style.removeProperty("display");
+  open.style.display = "block";
+});
 
-  // Show the selected section
-  const selectedSection = document.getElementById(`section${sectionId}`);
-  if (selectedSection) {
-    selectedSection.classList.add('active');
-    selectedSection.style.display = 'block'; // Add this line
+open.addEventListener("click", () => {
+  open.style.display = "none";
+  closed.style.removeProperty("display");
+  closed.style.display = "block";
+});
 
-    // If it's section 2, show the list and hide the content
-    if (sectionId === 2) {
-      const list = document.querySelector('#section2 ul');
-      if (list) {
-        list.style.display = 'block';
+const links = document.querySelectorAll(".links a");
+const contents = document.querySelectorAll(".content");
+
+links.forEach((link, index) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    contents.forEach((content, i) => {
+      if (i === index) {
+        content.classList.add("active");
+      } else {
+        content.classList.remove("active");
       }
-
-      SECTIONS.forEach(id => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.style.display = 'none';
-        }
-      });
-    }
-  }
-}
-
-function showSection2Content(contentId) {
-  // Hide all content
-  SECTIONS.forEach(id => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.style.display = 'none';
-    }
+    });
   });
-
-  // Hide the list in section 2
-  const list = document.querySelector('#section2 ul');
-  if (list) {
-    list.style.display = 'none';
-  }
-
-  // Show the selected content
-  const selectedContent = SECTIONS[contentId - 1];
-  if (selectedContent) {
-    const element = document.getElementById(selectedContent);
-    if (element) {
-      element.style.display = 'block';
-    }
-  }
-}
-
+});

@@ -1,160 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Architect Roberto Martinez</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <title>Roberto Martinez</title>
 </head>
 <body>
-<div class="container">
-  <nav>
-    <div id="mySidebar" class="sidebar">
-        <ul>
-            <img src="./SVG/RMA 4.png" 
-                 alt="Robbies logo">
-            <li><a href="#about" data-id="1" onclick="showSection(event, 1)">About</a></li>
-            <li><a href="#work" data-id="2" onclick="showSection(event, 2)">Work</a></li>
-            <li><a href="#contact" data-id="3" onclick="showSection(event, 3)">Contact</a></li>
-        </ul>
-        <div class="social-icons">
-            <li>
-                        <a target="_blank"  href="https://www.linkedin.com/in/roberto-martinez-meza-00723223b/">
-                            <svg xmlns="http://www.w3.org/2000/svg" 
-                                 height="1.5em"      
-                                 viewBox="0 0 448 512">
-                                 <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:roberto.martinez.mez@gmail.com">
-                            <svg xmlns="http://www.w3.org/2000/svg" 
-                                 height="1.5em" 
-                                 viewBox="0 0 512 512">
-                                <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/>
-                            </svg>
-                        </a>
-            </li>
-        </div>
-  </nav>
- <main>
-    <div id="section1" class="active">
-            <img class="profile-pic"
-                 src="./Profile Pic/IMG_1331.jpg" 
-                 alt="picture of my boy Robbie">
-        <p>From growing up in landscaping, 
-           to taking in different architectural styles  
-           consequently. To becoming a passionate emerging architecture designer, 
-           aspiring to learn and apply more of my architectural knowledge. 
-           By pushing myself to learn new architectural styles and design methods. 
-           And during that process, provide a consistent work ethic and creativity. 
-           To continue down this path while taking any opportunity to further my skills as an architectural designer.
-        </p>
-    </div>
-    <div id="section2">
-        <ul>
-            <li><a href="#" data-id="1" onclick="showSection2Content(1)">Black Box Theatre</a></li>
-            <li><a href="#" data-id="2" onclick="showSection2Content(2)">Observatory</a></li>
-            <li><a href="#" data-id="3" onclick="showSection2Content(3)">Palliative Care Center</a></li>
-            <li><a href="#" data-id="4" onclick="showSection2Content(4)">Renders</a></li>
-            <li><a href="#" data-id="5" onclick="showSection2Content(5)">Revolve Terra Chapel</a></li>
-            <li><a href="#" data-id="6" onclick="showSection2Content(6)">Sketches</a></li>
-        </ul>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./SVG/RMA 4.png" alt="">
+            </div>
 
-        <div id="blackBoxTheatreContent" class="content" style="display: none;">
-            <img src="./Black Box Theatre/Artboard 2 UP.png" alt="">
-            <img src="./Black Box Theatre/Artboard 2-2.png" alt="">
-            <img src="./Black Box Theatre/Artboard 2-3.png" alt="">
-            <img src="./Black Box Theatre/BLUE TOUCH BB.png" alt="">
-            <img src="./Black Box Theatre/Blur 2 NEW BLUE 2 BB.png" alt="">
-            <img src="./Black Box Theatre/First Old model Updated BLUE BB.png" alt="">
-            <img src="./Black Box Theatre/FLOOR PLAN BLACK LINES UPDATED-01.png" alt="">
-            <img src="./Black Box Theatre/FLOOR PLAN BLACK LINES UPDATED-02.png" alt="">
-            <img src="./Black Box Theatre/FLOOR PLAN BLACK LINES UPDATED-03.png" alt="">
-            <img src="./Black Box Theatre/FLOOR PLAN BLACK LINES UPDATED-04.png" alt="">
-            <img src="./Black Box Theatre/ISO TU.png" alt="">
-            <img src="./Black Box Theatre/model 3 updated BLACK BACK.png" alt="">
-            <img src="./Black Box Theatre/SECTION 1 TU.png" alt="">
-            <img src="./Black Box Theatre/SECTION PERSPECTIVE 1-01 EDIT-01 UP.png" alt="">
-            <img src="./Black Box Theatre/side elevation.png" alt="">
-            <img src="./Black Box Theatre/SITE COLOR 9.png" alt="">
-        </div>
-        <div id="observatoryContent" class="content" style="display: none;">
-                <div class="observatory-wrapper">
-                    <div class="ob-one">
-                        <h1>Observatory</h1>
-                        <p>Connected to the Black Box Theatre, the observatory designed by a charcoal sketch with lines.</p>
-    
-                        <p>The sketch then progressed and came to fruition, allowing the charcoal to take over. The stick model and planes form from the charcoal sketch.</p>
-                            
-                        <p>Certain planes overlap one another. Forming these triangular patterns surrounding the planetarium, possessing almost a similar language as the Black Box Theatre.</p>
-                    </div>
-                    <img class="ob-two" src="./Observatory/OBSERVATORY TU COLLAGE RENDER.png" alt="">
-                    <img class="ob-three" src="./Observatory Labeling/Observatory Labeling-02.png" alt="">
-                    <img class="ob-four" src="./Observatory Labeling/Observatory Labeling-03.png" alt="">
-                    <img class="ob-five" src="./Observatory Labeling/Observatory Labeling-01.png" alt="">
-                    <img class="ob-six" src="./Observatory Labeling/Observatory Labeling-04.png" alt="">
+                <div class="hamburger-menu">
+                <svg class="hamburgerClose"
+                 xmlns="http://www.w3.org/2000/svg" 
+                 height="1.1em" 
+                 viewBox="0 0 448 512">
+                 <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+              
+            <svg class="hamburgerOpen"
+                 xmlns="http://www.w3.org/2000/svg" 
+                 height="1.2em" 
+                 viewBox="0 0 384 512">
+              <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+            </svg>
+            
                 </div>
-        </div>
-        <div id="pallativeCareCenterContent" class="content" style="display: none;">
-            <div class="pallative-wrapper">
-                <div class="pal-one">
-                    <h1>Pallative Care Center</h1>
-                    <p>The Palliative Care Center in San Jose, Costa Rica, is designed to provide elderly individuals with an easy transition in their final stages of life.</p>
-                    <p>The patient rooms, are designed to ease the transition from private to public areas.</p>
-                    <p>The courtyard contains sitting spaces and green areas for the patients to spend with nature. The hyperparabolid roof allows natural light and fresh air to pour into the building.</p>
+                <div class="links">
+                    <a href="#">About</a>
+                    <a href="#">Work</a>
+                    <a href="#">Contact</a>
                 </div>
-                <img class="pal-two"   src="./Pallative Care Center/SITE 4.png" alt="">
-                <img class="pal-three"   src="./Pallative Care Center/PALL AXO TU.png" alt="">
-                <img class="pal-four"   src="./PC Labeling/PC Render Labeling-01.png" alt="">
-                <img class="pal-five"   src="./Pallative Care Center/BLUR OFFICE.png" alt="">
-                <img class="pal-six"   src="./PC Labeling/PC Render Labeling-02.png" alt="">
-                <img class="pal-seven"   src="./Pallative Care Center/DIAGRAM [Converted]-01.png" alt="">
-                <img class="pal-eight"   src="./Pallative Care Center/DIAGRAM [Converted]-02.png" alt="">
-                <img class="pal-nine"   src="./Pallative Care Center/DIAGRAM [Converted]-03.png" alt="">
-                <img class="pal-eleven"  src="./PC Labeling/PC Section Labeling.png" alt="">
+            
+        </nav>
+    </header>
+    <main>
+        <div class="content active" id="content1">
+            <div class="aboutContainer">
+                <div>
+                    <img src="/Profile Pic/IMG_1331.jpg" alt="">
+                </div>
+                <div class="aboutText">
+                    <h1>Roberto Martinez</h1>
+                    <p></p>
+                </div>
             </div>
         </div>
-        <div id="renders" class="content" style="display: none;">
-            <div class="render-wrapper">
-                <img src="./Renders/05072020 (7) 1.png" alt="">
-                <img src="./Renders/BLUR BBT 3.png" alt="">
-                <img src="./Renders/EDIT 5.png" alt="">
-                <img src="./Renders/Image13.png" alt="">
-                <img src="./Renders/New Project 1 - Sheet - G101 - COVER SHEET-ROBERTO MARTINEZ.png" alt="">
-                <img src="./Renders/TU 1-2.png" alt="">
-                <img src="./Renders/TU 2.png" alt="">
-                <img src="./Renders/TU 3.png" alt="">
-            </div>
-        </div>
-        <div id="revolveTerraChapel" class="content" style="display: none;">
-            <img src="./Revolve Terra Chapel/ANALYSUS WITH PHOTO.png" alt="">
-            <img src="./Revolve Terra Chapel/AXO CLEANUP 4.png" alt="">
-            <img src="./Revolve Terra Chapel/BOTTOM LEVEL TOUCHUP 8.png" alt="">
-            <img src="./Revolve Terra Chapel/CHAPEL ELEVATION 2.png" alt="">
-            <img src="./Revolve Terra Chapel/CHAPEL SITE PLAN UPDATED-04.png" alt="">
-            <img src="./Revolve Terra Chapel/PLAN SECTION SITE CHAPEL-01.png" alt="">
-            <img src="./Revolve Terra Chapel/PLAN SECTION SITE CHAPEL-02.png" alt="">
-            <img src="./Revolve Terra Chapel/STAIR RENDER 8.png" alt="">
-            <img src="./Revolve Terra Chapel/SUNSET TOUCHUP 6.png" alt="">
-            <img src="./Revolve Terra Chapel/UPPER LEVEL TOUCHUP 7.png" alt="">
-            <img src="./Revolve Terra Chapel/VERTICAL DIAGRAM 2 division.png" alt="">
-            <img src="./Revolve Terra Chapel/VERTICAL DIAGRAM 2 mass.png" alt="">
-            <img src="./Revolve Terra Chapel/VERTICAL DIAGRAM 2 torsion.png" alt="">
-        </div>
-        <div id="sketches" class="content" style="display: none;">
-            <div class="sketch-wrapper">
-                <img class="sketch-one" src="./Sketches/gs.png" alt="">
-                <img class="sketch-two" src="./Sketches/RTC.png" alt="">
-                <img class="sketch-three" src="./Sketches/TURNING TORSO.png" alt="">
-                <img class="sketch-four" src="./Sketches/falling water 1.png" alt="">
-            </div>
-        </div>
-    </div>
 
-</main>
-</div>
-<script src="./script.js"></script>
+
+
+        <div class="content" id="content2">
+            <div class="workContainer">
+                <div class="work">
+                    <a href="">
+                        <img src="./Observatory/OBSERVATORY TU 2 MODELS.png" alt="">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="">
+                        <img src="./Renders/TU 1-2.png" alt="">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="">
+                        <img src="./Pallative Care Center/SITE 4.png" alt="">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="">
+                        <img src="./Revolve Terra Chapel/SUNSET TOUCHUP 6.png" alt="">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="">
+                        <img src="./Sketches/falling water 1.png" alt="">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="">
+                        <img src="./Black Box Theatre/ISO TU.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="signature">
+            <p>Made with <i class="much-heart"></i> by Jonfernando Alfaro</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html> 
