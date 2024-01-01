@@ -195,7 +195,7 @@ nav img {
 
     .workContainer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     /* BLack Box Theatre */
@@ -295,6 +295,14 @@ nav img {
     .plc-box1 {
         text-align: center;
     }
+
+    /* Sketches */ 
+
+    #sketches-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
 
     /* Observatory */
 
