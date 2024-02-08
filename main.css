@@ -40,7 +40,12 @@ nav img {
 }
 
 .links {
-    display: none;}
+    display: none;
+}
+
+.hamburgerOpen {
+    display: none;
+}
 
 .main-container {
     display: flex;

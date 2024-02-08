@@ -1,16 +1,17 @@
 const closed = document.querySelector(".hamburgerClose");
 const open = document.querySelector(".hamburgerOpen");
 
+function toggleIcons(iconToShow, iconToHide) {
+  iconToHide.style.display = "none";
+  iconToShow.style.display = "block"
+}
+
 closed.addEventListener("click", () => {
-  closed.style.display = "none";
-  open.style.removeProperty("display");
-  open.style.display = "block";
+  toggleIcons(open, closed);
 });
 
 open.addEventListener("click", () => {
-  open.style.display = "none";
-  closed.style.removeProperty("display");
-  closed.style.display = "block";
+  toggleIcons(closed, open);
 });
 
 const links = document.querySelectorAll(".links a");
